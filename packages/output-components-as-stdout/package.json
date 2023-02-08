@@ -6,7 +6,7 @@
     "types": "dist/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/marcomontalbano/figma-exporter.git",
+        "url": "git+https://github.com/minolettin/proxy-figma-export.git",
         "directory": "packages/output-components-as-stdout"
     },
     "author": "Marco Montalbano",
