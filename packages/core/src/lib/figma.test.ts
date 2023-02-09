@@ -2,7 +2,7 @@ import sinon from 'sinon';
 import { expect } from 'chai';
 import nock from 'nock';
 
-import * as Figma from 'figma-js';
+import * as Figma from '@minolettinat/proxy-figma-js';
 
 import * as figmaDocument from './_config.test';
 import * as figma from './figma';

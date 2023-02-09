@@ -1,4 +1,4 @@
-import * as Figma from 'figma-js';
+import * as Figma from '@minolettinat/proxy-figma-js';
 
 import { basename, dirname } from 'path';
 import pLimit from 'p-limit';

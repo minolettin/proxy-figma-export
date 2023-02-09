@@ -1,5 +1,5 @@
 import axios from 'axios';
-import * as Figma from 'figma-js';
+import * as Figma from '@minolettinat/proxy-figma-js';
 import { writeFileSync } from 'fs';
 import { sep } from 'path';
 

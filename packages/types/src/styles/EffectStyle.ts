@@ -1,4 +1,4 @@
-import * as Figma from 'figma-js';
+import * as Figma from '@minolettinat/proxy-figma-js';
 import { Color } from './PaintStyle';
 
 export type EffectStyleShadow = {
