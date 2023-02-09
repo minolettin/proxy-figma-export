@@ -34,7 +34,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/minolettin/proxy-figma-export.git",
+    "url": "git+https://github.com/marcomontalbano/figma-exporter.git",
     "directory": "packages/cli"
   }
 }

@@ -6,7 +6,7 @@
     "types": "dist/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/minolettin/proxy-figma-export.git",
+        "url": "git+https://github.com/marcomontalbano/figma-exporter.git",
         "directory": "packages/types"
     },
     "author": "Marco Montalbano",
@@ -27,6 +27,6 @@
         "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
     },
     "dependencies": {
-        "figma-js": "~1.16.0"
+        "@minolettinat/proxy-figma-js": "~1.16.1"
     }
 }
