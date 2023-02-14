@@ -25,4 +25,4 @@ export type ComponentOutputterParamOption = {
 
 export type StyleNode = Figma.Style & Figma.Node
 
-export type ComponentFilter = (component: Figma.Component) => boolean
+export type ComponentFilter = (component: Figma.Component | Figma.ComponentSet) => boolean

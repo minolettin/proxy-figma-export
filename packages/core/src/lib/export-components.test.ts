@@ -167,7 +167,15 @@ describe('export-component', () => {
         await expect(exportComponents({
             fileId: 'fileABCD',
             token: 'token1234',
-        })).to.be.rejectedWith(Error, 'while fetching file "fileABCD": some error');
+        })).to.be.rejectedWith(Error, `while fetching svg "https://example.com/10:8.svg": Nock: No match for request {
+  "method": "GET",
+  "url": "https://example.com/10:8.svg",
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "content-type": "images/svg+xml",
+    "user-agent": "axios/0.21.4"
+  }
+}`);
     });
 
     it('should throw an error if document property is missing when fetching file', async () => {

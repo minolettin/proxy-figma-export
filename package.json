@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/minolettin/proxy-figma-export"
+    "url": "https://github.com/marcomontalbano/figma-export"
   },
   "scripts": {
     "debug": "yarn build && ts-node ./packages/cli/bin/run use-config .figmaexportrc.ts",

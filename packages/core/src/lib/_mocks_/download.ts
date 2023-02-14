@@ -1,7 +1,8 @@
-import axios from 'axios';
+import axios, { AxiosRequestConfig } from 'axios';
 import * as Figma from '@minolettinat/proxy-figma-js';
 import { writeFileSync } from 'fs';
 import { sep } from 'path';
+import createHttpsProxyAgent from 'https-proxy-agent';
 
 (async () => {
     const { FIGMA_TOKEN } = process.env;
@@ -10,9 +11,15 @@ import { sep } from 'path';
         throw new Error('FIGMA_TOKEN is not defined');
     }
 
-    const fetch = async (url: string) => (await axios.get(url, {
+    const config: AxiosRequestConfig = {
         headers: { 'X-FIGMA-TOKEN': FIGMA_TOKEN },
-    })).data;
+    };
+
+    if (process.env.https_proxy) {
+        config.httpsAgent = createHttpsProxyAgent(process.env.https_proxy);
+    }
+
+    const fetch = async (url: string) => (await axios.get(url, config)).data;
 
     const figmaFiles: Figma.FileResponse = await fetch(
         'https://api.figma.com/v1/files/fzYhvQpqwhZDUImRz431Qo',

@@ -20,24 +20,35 @@ const getComponents = (
 ): FigmaExport.ComponentNode[] => {
     let components: FigmaExport.ComponentNode[] = [];
 
-    children.forEach((component) => {
-        if (component.type === 'COMPONENT' && filter(component)) {
+    children.forEach((node) => {
+        if (node.type === 'COMPONENT' && filter(node)) {
             components.push({
-                ...component,
+                ...node,
                 svg: '',
                 figmaExport: {
-                    id: component.id,
-                    dirname: dirname(component.name),
-                    basename: basename(component.name),
+                    id: node.id,
+                    dirname: dirname(node.name),
+                    basename: basename(node.name),
                 },
             });
-            return;
         }
 
-        if ('children' in component) {
+        // todo: overwrite naming of variant-components (this should be dynamic with parameters and a template literal string)
+        if (node.type === 'COMPONENT_SET' && filter(node)) {
             components = [
                 ...components,
-                ...getComponents((component.children), filter),
+                ...getComponents((node.children), filter),
+            ];
+        }
+
+        if (node.type === 'COMPONENT_SET' || node.type === 'COMPONENT') {
+            return; // with this it searches only on one level (all components or componentSets have to be on the same level)
+        }
+
+        if ('children' in node) {
+            components = [
+                ...components,
+                ...getComponents((node.children), filter),
             ];
         }
     });
@@ -84,16 +95,22 @@ const fileImages = async (client: Figma.ClientInterface, fileId: string, ids: st
         ids,
         format: 'svg',
         svg_include_id: true,
-    }).catch((error: Error) => {
-        throw new Error(`while fetching fileImages: ${error.message}`);
+    }).catch(() => {
+        return client.fileImages(fileId, {
+            ids,
+            format: 'svg',
+            svg_include_id: true,
+        }).catch((error: Error) => {
+            throw new Error(`while fetching fileImages: ${error.message}`);
+        });
     });
 
     return response.data.images;
 };
 
 const getImages = async (client: Figma.ClientInterface, fileId: string, ids: string[]): Promise<{readonly [key: string]: string}> => {
-    const idss = chunk(ids, 200);
-    const limit = pLimit(30);
+    const idss = chunk(ids, 100);
+    const limit = pLimit(5);
 
     const resolves = await Promise.all(idss.map((groupIds) => {
         return limit(() => fileImages(client, fileId, groupIds));
@@ -118,7 +135,7 @@ const fileSvgs = async (
     fileId: string,
     ids: string[],
     {
-        concurrency = 30,
+        concurrency = 5,
         retries = 3,
         transformers = [],
         // eslint-disable-next-line @typescript-eslint/no-empty-function
@@ -147,6 +164,7 @@ const fileSvgs = async (
     return fromEntries(svgs);
 };
 
+// todo: probably nothing todo --> check
 const enrichPagesWithSvg = async (
     client: Figma.ClientInterface,
     fileId: string,
