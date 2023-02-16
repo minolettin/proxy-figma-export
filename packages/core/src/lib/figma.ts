@@ -1,5 +1,4 @@
 import * as Figma from '@minolettinat/proxy-figma-js';
-
 import { basename, dirname } from 'path';
 import pLimit from 'p-limit';
 import pRetry from 'p-retry';
@@ -13,6 +12,9 @@ import {
     chunk,
     emptySvg,
 } from './utils';
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const cloneDeep = require('lodash.clonedeep');
 
 const getComponents = (
     children: readonly Figma.Node[] = [],
@@ -33,19 +35,27 @@ const getComponents = (
             });
         }
 
-        // todo: overwrite naming of variant-components (this should be dynamic with parameters and a template literal string)
         if (node.type === 'COMPONENT_SET' && filter(node)) {
+            const variantsWithNewNames: {
+                -readonly [key in keyof Figma.Component]: Figma.Component[key];
+            }[] = cloneDeep(node.children);
+            variantsWithNewNames.forEach((child) => {
+                const regexMatches = /(?<==)(\d+|[a-zA-Z]+)/gm[Symbol.match](child.name)?.map((match) => match.toLowerCase());
+                if (regexMatches?.[1] === 'light') {
+                    // eslint-disable-next-line no-param-reassign,max-len
+                    child.name = `${node.name}_${regexMatches?.[0]}px`;
+                } else {
+                    // eslint-disable-next-line no-param-reassign,max-len
+                    child.name = `${node.name}_${regexMatches?.[0]}_${regexMatches?.[1]}`;
+                }
+            });
             components = [
                 ...components,
-                ...getComponents((node.children), filter),
+                ...getComponents((variantsWithNewNames), filter),
             ];
         }
 
-        if (node.type === 'COMPONENT_SET' || node.type === 'COMPONENT') {
-            return; // with this it searches only on one level (all components or componentSets have to be on the same level)
-        }
-
-        if ('children' in node) {
+        if ('children' in node && node.type !== 'COMPONENT' && node.type !== 'COMPONENT_SET') {
             components = [
                 ...components,
                 ...getComponents((node.children), filter),
