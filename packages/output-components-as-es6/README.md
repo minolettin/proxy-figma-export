@@ -1,6 +1,6 @@
-# @figma-export/output-components-as-es6
+# @minolettinat/proxy-figma-export-output-components-as-es6
 
-> Outputter for [@figma-export](https://github.com/marcomontalbano/figma-export) that exports components in javascript file.
+> Outputter for [@minolettinat/figma-export](https://github.com/marcomontalbano/figma-export) that exports components in javascript file.
 
 With this outputter you can export all components as variables inside a `.js` file called with the page name.
 
@@ -33,7 +33,7 @@ module.exports = {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             onlyFromPages: ['icons', 'unit-test'],
             outputters: [
-                require('@figma-export/output-components-as-es6')({
+                require('@minolettinat/proxy-figma-export-output-components-as-es6')({
                     output: './output'
                 })
             ]
@@ -47,11 +47,11 @@ module.exports = {
 `getVariableName`, `useBase64` and `useDataUrl` are **optional**.
 
 ```js
-const { camelCase } = require('@figma-export/utils');
+const { camelCase } = require('@minolettinat/proxy-figma-export-utils');
 
 ...
 
-require('@figma-export/output-components-as-es6')({
+require('@minolettinat/proxy-figma-export-output-components-as-es6')({
     output: './output',
     getVariableName: (options) => camelCase(options.componentName.trim()),
     useBase64: false,
@@ -66,13 +66,13 @@ require('@figma-export/output-components-as-es6')({
 Using npm:
 
 ```sh
-npm install --save-dev @figma-export/output-components-as-es6
+npm install --save-dev @minolettinat/proxy-figma-export-output-components-as-es6
 ```
 
 or using yarn:
 
 ```sh
-yarn add @figma-export/output-components-as-es6 --dev
+yarn add @minolettinat/proxy-figma-export-output-components-as-es6 --dev
 ```
 
 ## Options

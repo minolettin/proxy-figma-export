@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@minolettinat/proxy-figma-export-types';
 import * as Figma from '@minolettinat/proxy-figma-js';
 
 export const svg = {

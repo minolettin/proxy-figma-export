@@ -1,6 +1,6 @@
-# @figma-export/output-styles-as-less
+# @minolettinat/proxy-figma-export-output-styles-as-less
 
-> Styles Outputter for [@figma-export](https://github.com/marcomontalbano/figma-export) that exports styles to LESS.
+> Styles Outputter for [@minolettinat/figma-export](https://github.com/marcomontalbano/figma-export) that exports styles to LESS.
 
 With this outputter you can export all the styles as variables inside a `.less` file.
 
@@ -23,7 +23,7 @@ module.exports = {
         ['styles', {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             outputters: [
-                require('@figma-export/output-styles-as-less')({
+                require('@minolettinat/proxy-figma-export-output-styles-as-less')({
                     output: './output'
                 })
             ]
@@ -37,11 +37,11 @@ module.exports = {
 `getFilename` and `getVariableName` are **optional**.
 
 ```js
-const { kebabCase } = require('@figma-export/utils');
+const { kebabCase } = require('@minolettinat/proxy-figma-export-utils');
 
 ...
 
-require('@figma-export/output-styles-as-less')({
+require('@minolettinat/proxy-figma-export-output-styles-as-less')({
     output: './output',
     getFilename: () => '_variables',
     getVariableName: (style) => kebabCase(style.name).toLowerCase(),
@@ -55,11 +55,11 @@ require('@figma-export/output-styles-as-less')({
 Using npm:
 
 ```sh
-npm install --save-dev @figma-export/output-styles-as-less
+npm install --save-dev @minolettinat/proxy-figma-export-output-styles-as-less
 ```
 
 or using yarn:
 
 ```sh
-yarn add @figma-export/output-styles-as-less --dev
+yarn add @minolettinat/proxy-figma-export-output-styles-as-less --dev
 ```

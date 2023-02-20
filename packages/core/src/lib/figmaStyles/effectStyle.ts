@@ -1,5 +1,5 @@
 import * as Figma from '@minolettinat/proxy-figma-js';
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@minolettinat/proxy-figma-export-types';
 
 import { notEmpty } from '../utils';
 import { extractColor } from './paintStyle';

@@ -10,7 +10,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>@figma-export</title>
+                <title>@minolettinat/figma-export</title>
                 <meta name="description" content="Export tool for Figma. You can easily and automatically export your figma components and use them directly into your website." />
                 <link rel="apple-touch-icon" sizes="57x57" href="/images/icon/apple-icon-57x57.png" />
                 <link rel="apple-touch-icon" sizes="60x60" href="/images/icon/apple-icon-60x60.png" />

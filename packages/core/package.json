@@ -1,7 +1,7 @@
 {
-    "name": "@figma-export/core",
-    "version": "4.5.0",
-    "description": "@figma-export core functionalities",
+    "name": "@minolettinat/proxy-figma-export-core",
+    "version": "4.5.2",
+    "description": "@minolettinat/figma-export core functionalities",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": {
@@ -23,7 +23,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "^4.5.0",
+        "@minolettinat/proxy-figma-export-types": "^4.5.1",
         "@minolettinat/proxy-figma-js": "~1.16.0",
         "axios": "~0.27.2",
         "https-proxy-agent": "5.0.1",

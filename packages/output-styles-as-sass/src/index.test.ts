@@ -5,8 +5,8 @@ import {
     FillStyle,
     EffectStyle,
     Style,
-} from '@figma-export/types';
-import { camelCase } from '@figma-export/utils';
+} from '@minolettinat/proxy-figma-export-types';
+import { camelCase } from '@minolettinat/proxy-figma-export-utils';
 
 // eslint-disable-next-line import/order
 import fs = require('fs');

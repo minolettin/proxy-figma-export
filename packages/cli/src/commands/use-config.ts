@@ -4,14 +4,14 @@ import { Sade } from 'sade';
 import fs from 'fs';
 import path from 'path';
 
-import * as figmaExport from '@figma-export/core';
+import * as figmaExport from '@minolettinat/proxy-figma-export-core';
 
 import {
     ComponentsCommand,
     StylesCommand,
     FigmaExportRC,
     BaseCommandOptions,
-} from '@figma-export/types';
+} from '@minolettinat/proxy-figma-export-types';
 
 export const addUseConfig = (prog: Sade, spinner: Ora) => prog
     .command('use-config [configFile]', undefined)

@@ -2,7 +2,7 @@ import * as Figma from '@minolettinat/proxy-figma-js';
 import { basename, dirname } from 'path';
 import pLimit from 'p-limit';
 import pRetry from 'p-retry';
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@minolettinat/proxy-figma-export-types';
 
 import {
     toArray,
@@ -43,7 +43,7 @@ const getComponents = (
                 const regexMatches = /(?<==)(\d+|[a-zA-Z]+)/gm[Symbol.match](child.name)?.map((match) => match.toLowerCase());
                 if (regexMatches?.[1] === 'light') {
                     // eslint-disable-next-line no-param-reassign,max-len
-                    child.name = `${node.name}_${regexMatches?.[0]}px`;
+                    child.name = `${node.name}_${regexMatches?.[0]}`;
                 } else {
                     // eslint-disable-next-line no-param-reassign,max-len
                     child.name = `${node.name}_${regexMatches?.[0]}_${regexMatches?.[1]}`;

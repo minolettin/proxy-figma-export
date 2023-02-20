@@ -19,8 +19,8 @@ const props = {
                     fileId: 'fzYhvQpqwhZDUImRz431Qo',
                     onlyFromPages: ['icons'],
                     outputters: [
-                        // https://www.npmjs.com/package/@figma-export/output-components-as-svgstore
-                        require('@figma-export/output-components-as-svgstore')({
+                        // https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-components-as-svgstore
+                        require('@minolettinat/proxy-figma-export-output-components-as-svgstore')({
                             output: './output/svgstore-monochrome',
                             svgstoreConfig: {
                                 cleanSymbols: ['fill']

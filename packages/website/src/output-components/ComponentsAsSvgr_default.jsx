@@ -26,8 +26,8 @@ const props = {
                     fileId: 'fzYhvQpqwhZDUImRz431Qo',
                     onlyFromPages: ['octicons-by-github'],
                     outputters: [
-                        // https://www.npmjs.com/package/@figma-export/output-components-as-svgr
-                        require('@figma-export/output-components-as-svgr')({
+                        // https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-components-as-svgr
+                        require('@minolettinat/proxy-figma-export-output-components-as-svgr')({
                             output: './output'
                         })
                     ]

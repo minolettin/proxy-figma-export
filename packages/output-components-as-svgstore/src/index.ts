@@ -2,7 +2,7 @@
 
 import svgstore from 'svgstore';
 
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@minolettinat/proxy-figma-export-types';
 
 import { Options as SvgStoreOptions } from './svgstore';
 

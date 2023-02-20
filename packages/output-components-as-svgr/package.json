@@ -1,7 +1,7 @@
 {
-  "name": "@figma-export/output-components-as-svgr",
-  "version": "4.5.0",
-  "description": "Outputter for @figma-export that exports components as React components using svgr",
+  "name": "@minolettinat/proxy-figma-export-output-components-as-svgr",
+  "version": "4.5.1",
+  "description": "Outputter for @minolettinat/figma-export that exports components as React components using svgr",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -25,8 +25,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@figma-export/types": "^4.5.0",
-    "@figma-export/utils": "^4.0.0",
+    "@minolettinat/proxy-figma-export-types": "^4.5.1",
+    "@minolettinat/proxy-figma-export-utils": "^4.5.1",
     "@svgr/core": "~6.3.1"
   },
   "engines": {

@@ -1,8 +1,8 @@
 import { Ora } from 'ora';
 import { Sade } from 'sade';
 
-import * as figmaExport from '@figma-export/core';
-import * as FigmaExport from '@figma-export/types';
+import * as figmaExport from '@minolettinat/proxy-figma-export-core';
+import * as FigmaExport from '@minolettinat/proxy-figma-export-types';
 
 import { asArray, requirePackages } from '../utils';
 
@@ -14,7 +14,7 @@ export const addStyles = (prog: Sade, spinner: Ora) => prog
     .option('-p, --page', 'Figma page names (all pages when not specified)')
     .option('--fileVersion', `A specific version ID to get. Omitting this will get the current version of the file.
                          https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history`)
-    .example('styles fzYhvQpqwhZDUImRz431Qo -O @figma-export/output-styles-as-css')
+    .example('styles fzYhvQpqwhZDUImRz431Qo -O @minolettinat/proxy-figma-export-output-styles-as-css')
     .action(
         (fileId, {
             fileVersion,

@@ -1,7 +1,7 @@
 {
-    "name": "@figma-export/output-styles-as-less",
-    "version": "4.5.0",
-    "description": "Outputter for @figma-export that exports styles to LESS",
+    "name": "@minolettinat/proxy-figma-export-output-styles-as-less",
+    "version": "4.5.1",
+    "description": "Outputter for @minolettinat/figma-export that exports styles to LESS",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": {
@@ -24,8 +24,8 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "^4.5.0",
-        "@figma-export/utils": "^4.0.0"
+        "@minolettinat/proxy-figma-export-types": "^4.5.1",
+        "@minolettinat/proxy-figma-export-utils": "^4.5.1"
     },
     "engines": {
         "node": "^12.22.0 || ^14.17.0 || >=16.0.0"

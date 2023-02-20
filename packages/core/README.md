@@ -1,17 +1,17 @@
-# @figma-export/core
+# @minolettinat/proxy-figma-export-core
 
-> @figma-export core functionalities.
+> @minolettinat/figma-export core functionalities.
 
 ## Install
 
 Using npm:
 
 ```sh
-npm i -D @figma-export/core
+npm i -D @minolettinat/proxy-figma-export-core
 ```
 
 or using yarn:
 
 ```sh
-yarn add @figma-export/core --dev
+yarn add @minolettinat/proxy-figma-export-core --dev
 ```

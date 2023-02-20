@@ -5,7 +5,7 @@ import sinon from 'sinon';
 import { expect } from 'chai';
 
 import * as Figma from '@minolettinat/proxy-figma-js';
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@minolettinat/proxy-figma-export-types';
 
 import * as figmaStyles from './index';
 

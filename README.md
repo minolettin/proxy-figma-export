@@ -85,7 +85,7 @@ If you wanna try it just run following command and you will be able to download 
 export FIGMA_TOKEN=<personalAccessToken>
 
 # export figma components as svg
-npx -p @figma-export/cli -p @figma-export/output-components-as-svg figma-export components fzYhvQpqwhZDUImRz431Qo -O @figma-export/output-components-as-svg
+npx -p @minolettinat/proxy-figma-export-cli -p @minolettinat/proxy-figma-export-output-components-as-svg figma-export components fzYhvQpqwhZDUImRz431Qo -O @minolettinat/proxy-figma-export-output-components-as-svg
 ```
 
 or you can export all styles into `.scss`
@@ -95,17 +95,17 @@ or you can export all styles into `.scss`
 export FIGMA_TOKEN=<personalAccessToken>
 
 # export figma styles as .scss variables
-npx -p @figma-export/cli -p @figma-export/output-styles-as-sass figma-export styles fzYhvQpqwhZDUImRz431Qo -O @figma-export/output-styles-as-sass
+npx -p @minolettinat/proxy-figma-export-cli -p @minolettinat/proxy-figma-export-output-styles-as-sass figma-export styles fzYhvQpqwhZDUImRz431Qo -O @minolettinat/proxy-figma-export-output-styles-as-sass
 ```
 
 
 ## :package: Packages
 
-### [@figma-export/core](/packages/core)
+### [@minolettinat/proxy-figma-export-core](/packages/core)
 
 This package contains the core functionalities for `figma-export`. You can download and use it as a dependency of your project.
 
-### [@figma-export/cli](/packages/cli)
+### [@minolettinat/proxy-figma-export-cli](/packages/cli)
 
 This package allows you to consume all core functionalities from your terminal.
 
@@ -118,10 +118,10 @@ Typically you'll prefer to use the `cli`. Here different ways to do the same:
 You can use `figma-export` as part of your build process.
 
 ```sh
-npm install --save-dev @figma-export/cli @figma-export/output-components-as-svg @figma-export/output-styles-as-sass
+npm install --save-dev @minolettinat/proxy-figma-export-cli @minolettinat/proxy-figma-export-output-components-as-svg @minolettinat/proxy-figma-export-output-styles-as-sass
 
 # or using `yarn`
-yarn add @figma-export/cli @figma-export/output-components-as-svg @figma-export/output-styles-as-sass --dev
+yarn add @minolettinat/proxy-figma-export-cli @minolettinat/proxy-figma-export-output-components-as-svg @minolettinat/proxy-figma-export-output-styles-as-sass --dev
 ```
 
 Now you can create a `script` command inside your `package.json`.
@@ -131,8 +131,8 @@ Following an example:
 ```diff
 {
   "scripts": {
-+   "figma:export-components": "figma-export components fzYhvQpqwhZDUImRz431Qo -O @figma-export/output-components-as-svg",
-+   "figma:export-styles": "figma-export styles fzYhvQpqwhZDUImRz431Qo -O @figma-export/output-styles-as-sass",
++   "figma:export-components": "figma-export components fzYhvQpqwhZDUImRz431Qo -O @minolettinat/proxy-figma-export-output-components-as-svg",
++   "figma:export-styles": "figma-export styles fzYhvQpqwhZDUImRz431Qo -O @minolettinat/proxy-figma-export-output-styles-as-sass",
   }
 }
 ```
@@ -142,7 +142,7 @@ Following an example:
 Alternatively you can use `npx` to use it on the fly:
 
 ```sh
-npx @figma-export/cli --help
+npx @minolettinat/proxy-figma-export-cli --help
 ```
 
 ### Global Setup
@@ -150,10 +150,10 @@ npx @figma-export/cli --help
 You can also install it as a global dependency:
 
 ```sh
-npm install -g @figma-export/cli
+npm install -g @minolettinat/proxy-figma-export-cli
 
 # or using `yarn`
-yarn add @figma-export/cli --global
+yarn add @minolettinat/proxy-figma-export-cli --global
 ```
 
 ```sh
@@ -176,7 +176,7 @@ module.exports = {
             // version: 'xxx123456', // optional - file's version history is only supported on paid Figma plans
             // onlyFromPages: ['icons'], // optional - Figma page names (all pages when not specified)
             outputters: [
-                require('@figma-export/output-styles-as-sass')({
+                require('@minolettinat/proxy-figma-export-output-styles-as-sass')({
                     output: './output/styles'
                 })
             ]
@@ -188,7 +188,7 @@ module.exports = {
             onlyFromPages: ['icons'],
             // filterComponent: (component) => !/^figma/.test(component.name), // optional
             transformers: [
-                require('@figma-export/transform-svg-with-svgo')({
+                require('@minolettinat/proxy-figma-export-transform-svg-with-svgo')({
                     plugins: [
                         {
                             name: 'preset-default',
@@ -206,7 +206,7 @@ module.exports = {
                 })
             ],
             outputters: [
-                require('@figma-export/output-components-as-svg')({
+                require('@minolettinat/proxy-figma-export-output-components-as-svg')({
                     output: './output/components'
                 })
             ]
@@ -219,10 +219,10 @@ module.exports = {
 
 > :information_source: Take a look at [.figmaexportrc.example.js](/.figmaexportrc.example.js) for more details.
 
-now you can install the `@figma-export` dependencies that you need
+now you can install the `@minolettinat/figma-export` dependencies that you need
 
 ```sh
-npm install --save-dev @figma-export/cli @figma-export/output-styles-as-sass @figma-export/transform-svg-with-svgo @figma-export/output-components-as-svg @figma-export/output-styles-as-sass
+npm install --save-dev @minolettinat/proxy-figma-export-cli @minolettinat/proxy-figma-export-output-styles-as-sass @minolettinat/proxy-figma-export-transform-svg-with-svgo @minolettinat/proxy-figma-export-output-components-as-svg @minolettinat/proxy-figma-export-output-styles-as-sass
 ```
 
 and update the `package.json`.
@@ -251,7 +251,7 @@ If you prefer, you can create a `.figmaexportrc.ts` and use TypeScript instead.
 For doing so, you just need to install a few new dependencies in your project.
 
 ```sh
-npm install --save-dev typescript ts-node @types/node @figma-export/types
+npm install --save-dev typescript ts-node @types/node @minolettinat/proxy-figma-export-types
 ```
 
 and slightly change your `package.json`
@@ -259,7 +259,7 @@ and slightly change your `package.json`
 ```diff
 {
   "scripts": {
-+   "figma:export": "ts-node ./node_modules/@figma-export/cli/bin/run use-config .figmaexportrc.ts"
++   "figma:export": "ts-node ./node_modules/@minolettinat/proxy-figma-export-cli/bin/run use-config .figmaexportrc.ts"
   }
 }
 ```

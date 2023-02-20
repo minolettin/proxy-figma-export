@@ -1,6 +1,6 @@
-# @figma-export/output-components-as-svgr
+# @minolettinat/proxy-figma-export-output-components-as-svgr
 
-> Outputter for [@figma-export](https://github.com/marcomontalbano/figma-export) that exports components as React components.
+> Outputter for [@minolettinat/figma-export](https://github.com/marcomontalbano/figma-export) that exports components as React components.
 
 With this outputter you can export all Figma components as React components into the specified output folder.
 
@@ -40,7 +40,7 @@ module.exports = {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             onlyFromPages: ['icons', 'unit-test'],
             outputters: [
-                require('@figma-export/output-components-as-svgr')({
+                require('@minolettinat/proxy-figma-export-output-components-as-svgr')({
                     output: './output'
                 })
             ]
@@ -55,11 +55,11 @@ module.exports = {
 
 ```js
 const path = require('path');
-const { pascalCase } = require('@figma-export/utils');
+const { pascalCase } = require('@minolettinat/proxy-figma-export-utils');
 
 ...
 
-require('@figma-export/output-components-as-svgr')({
+require('@minolettinat/proxy-figma-export-output-components-as-svgr')({
     output: './output',
     getDirname: (options) => `${options.pageName}${path.sep}${options.dirname}`,
     getComponentName: (options) => `${pascalCase(options.basename)}`,
@@ -85,11 +85,11 @@ require('@figma-export/output-components-as-svgr')({
 Using npm:
 
 ```sh
-npm install --save-dev @figma-export/output-components-as-svgr
+npm install --save-dev @minolettinat/proxy-figma-export-output-components-as-svgr
 ```
 
 or using yarn:
 
 ```sh
-yarn add @figma-export/output-components-as-svgr --dev
+yarn add @minolettinat/proxy-figma-export-output-components-as-svgr --dev
 ```

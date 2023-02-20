@@ -1,6 +1,6 @@
-# @figma-export/output-components-as-svgstore
+# @minolettinat/proxy-figma-export-output-components-as-svgstore
 
-> Outputter for [@figma-export](https://github.com/marcomontalbano/figma-export) that exports components in svg file (`SVG Sprites`).
+> Outputter for [@minolettinat/figma-export](https://github.com/marcomontalbano/figma-export) that exports components in svg file (`SVG Sprites`).
 
 With this outputter you can export all components as `<symbol>` inside a `.svg` file named with the page name.
 
@@ -30,7 +30,7 @@ module.exports = {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             onlyFromPages: ['icons', 'unit-test'],
             outputters: [
-                require('@figma-export/output-components-as-svgstore')({
+                require('@minolettinat/proxy-figma-export-output-components-as-svgstore')({
                     output: './output'
                 })
             ]
@@ -44,7 +44,7 @@ module.exports = {
 `getIconId` and `svgstoreConfig` are **optional**.
 
 ```js
-require('@figma-export/output-components-as-svgstore')({
+require('@minolettinat/proxy-figma-export-output-components-as-svgstore')({
     output: './output',
     getIconId: (options) => `${options.pageName}/${options.componentName}`,
     svgstoreConfig: {},
@@ -60,11 +60,11 @@ require('@figma-export/output-components-as-svgstore')({
 Using npm:
 
 ```sh
-npm install --save-dev @figma-export/output-components-as-svgstore
+npm install --save-dev @minolettinat/proxy-figma-export-output-components-as-svgstore
 ```
 
 or using yarn:
 
 ```sh
-yarn add @figma-export/output-components-as-svgstore --dev
+yarn add @minolettinat/proxy-figma-export-output-components-as-svgstore --dev
 ```

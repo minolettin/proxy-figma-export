@@ -276,148 +276,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@figma-export/cli@^4.5.0, @figma-export/cli@workspace:packages/cli":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/cli@workspace:packages/cli"
-  dependencies:
-    "@figma-export/core": ^4.5.0
-    "@figma-export/types": ^4.5.0
-    ora: ~5.4.1
-    sade: ~1.8.1
-  bin:
-    figma-export: ./bin/run
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/core@^4.5.0, @figma-export/core@workspace:packages/core":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/core@workspace:packages/core"
-  dependencies:
-    "@figma-export/types": ^4.5.0
-    "@minolettinat/proxy-figma-js": ~1.16.0
-    "@types/node": 18.11.19
-    axios: ~0.27.2
-    https-proxy-agent: 5.0.1
-    lodash.clonedeep: ^4.5.0
-    p-limit: ^3.1.0
-    p-retry: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/output-components-as-es6@workspace:packages/output-components-as-es6":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/output-components-as-es6@workspace:packages/output-components-as-es6"
-  dependencies:
-    "@figma-export/types": ^4.5.0
-    "@figma-export/utils": ^4.0.0
-    mini-svg-data-uri: ~1.4.4
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/output-components-as-stdout@workspace:packages/output-components-as-stdout":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/output-components-as-stdout@workspace:packages/output-components-as-stdout"
-  dependencies:
-    "@figma-export/types": ^4.5.0
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/output-components-as-svg@workspace:packages/output-components-as-svg":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/output-components-as-svg@workspace:packages/output-components-as-svg"
-  dependencies:
-    "@figma-export/types": ^4.5.0
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/output-components-as-svgr@workspace:packages/output-components-as-svgr":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/output-components-as-svgr@workspace:packages/output-components-as-svgr"
-  dependencies:
-    "@figma-export/types": ^4.5.0
-    "@figma-export/utils": ^4.0.0
-    "@svgr/core": ~6.3.1
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/output-components-as-svgstore@workspace:packages/output-components-as-svgstore":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/output-components-as-svgstore@workspace:packages/output-components-as-svgstore"
-  dependencies:
-    "@figma-export/types": ^4.5.0
-    svgstore: ~3.0.1
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/output-styles-as-css@workspace:packages/output-styles-as-css":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/output-styles-as-css@workspace:packages/output-styles-as-css"
-  dependencies:
-    "@figma-export/types": ^4.5.0
-    "@figma-export/utils": ^4.0.0
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/output-styles-as-less@workspace:packages/output-styles-as-less":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/output-styles-as-less@workspace:packages/output-styles-as-less"
-  dependencies:
-    "@figma-export/types": ^4.5.0
-    "@figma-export/utils": ^4.0.0
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/output-styles-as-sass@workspace:packages/output-styles-as-sass":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/output-styles-as-sass@workspace:packages/output-styles-as-sass"
-  dependencies:
-    "@figma-export/types": ^4.5.0
-    "@figma-export/utils": ^4.0.0
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/transform-svg-with-svgo@workspace:packages/transform-svg-with-svgo":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/transform-svg-with-svgo@workspace:packages/transform-svg-with-svgo"
-  dependencies:
-    "@figma-export/types": ^4.5.0
-    "@types/svgo": ~2.6.4
-    svgo: ~2.8.0
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/types@^4.5.0, @figma-export/types@workspace:packages/types":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/types@workspace:packages/types"
-  dependencies:
-    "@minolettinat/proxy-figma-js": ~1.16.1
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/utils@^4.0.0, @figma-export/utils@workspace:packages/utils":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/utils@workspace:packages/utils"
-  languageName: unknown
-  linkType: soft
-
-"@figma-export/website@workspace:packages/website":
-  version: 0.0.0-use.local
-  resolution: "@figma-export/website@workspace:packages/website"
-  dependencies:
-    "@figma-export/cli": ^4.5.0
-    "@figma-export/utils": ^4.0.0
-    "@types/react": ^18.0.20
-    eslint-config-next: ^12.3.0
-    next: ^12.3.0
-    npm-run-all: ~4.1.5
-    prismjs: ^1.29.0
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    rimraf: ~3.0.2
-    sass: ~1.54.9
-  languageName: unknown
-  linkType: soft
-
 "@gar/promisify@npm:^1.0.1, @gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -1335,6 +1193,148 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@minolettinat/proxy-figma-export-cli@^4.5.1, @minolettinat/proxy-figma-export-cli@workspace:packages/cli":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-cli@workspace:packages/cli"
+  dependencies:
+    "@minolettinat/proxy-figma-export-core": ^4.5.1
+    "@minolettinat/proxy-figma-export-types": ^4.5.1
+    ora: ~5.4.1
+    sade: ~1.8.1
+  bin:
+    figma-export: ./bin/run
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-core@^4.5.1, @minolettinat/proxy-figma-export-core@workspace:packages/core":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-core@workspace:packages/core"
+  dependencies:
+    "@minolettinat/proxy-figma-export-types": ^4.5.1
+    "@minolettinat/proxy-figma-js": ~1.16.0
+    "@types/node": 18.11.19
+    axios: ~0.27.2
+    https-proxy-agent: 5.0.1
+    lodash.clonedeep: ^4.5.0
+    p-limit: ^3.1.0
+    p-retry: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-output-components-as-es6@workspace:packages/output-components-as-es6":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-output-components-as-es6@workspace:packages/output-components-as-es6"
+  dependencies:
+    "@minolettinat/proxy-figma-export-types": ^4.5.1
+    "@minolettinat/proxy-figma-export-utils": ^4.5.1
+    mini-svg-data-uri: ~1.4.4
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-output-components-as-stdout@workspace:packages/output-components-as-stdout":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-output-components-as-stdout@workspace:packages/output-components-as-stdout"
+  dependencies:
+    "@minolettinat/proxy-figma-export-types": ^4.5.1
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-output-components-as-svg@workspace:packages/output-components-as-svg":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-output-components-as-svg@workspace:packages/output-components-as-svg"
+  dependencies:
+    "@minolettinat/proxy-figma-export-types": ^4.5.1
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-output-components-as-svgr@workspace:packages/output-components-as-svgr":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-output-components-as-svgr@workspace:packages/output-components-as-svgr"
+  dependencies:
+    "@minolettinat/proxy-figma-export-types": ^4.5.1
+    "@minolettinat/proxy-figma-export-utils": ^4.5.1
+    "@svgr/core": ~6.3.1
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-output-components-as-svgstore@workspace:packages/output-components-as-svgstore":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-output-components-as-svgstore@workspace:packages/output-components-as-svgstore"
+  dependencies:
+    "@minolettinat/proxy-figma-export-types": ^4.5.1
+    svgstore: ~3.0.1
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-output-styles-as-css@workspace:packages/output-styles-as-css":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-output-styles-as-css@workspace:packages/output-styles-as-css"
+  dependencies:
+    "@minolettinat/proxy-figma-export-types": ^4.5.1
+    "@minolettinat/proxy-figma-export-utils": ^4.5.1
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-output-styles-as-less@workspace:packages/output-styles-as-less":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-output-styles-as-less@workspace:packages/output-styles-as-less"
+  dependencies:
+    "@minolettinat/proxy-figma-export-types": ^4.5.1
+    "@minolettinat/proxy-figma-export-utils": ^4.5.1
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-output-styles-as-sass@workspace:packages/output-styles-as-sass":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-output-styles-as-sass@workspace:packages/output-styles-as-sass"
+  dependencies:
+    "@minolettinat/proxy-figma-export-types": ^4.5.1
+    "@minolettinat/proxy-figma-export-utils": ^4.5.1
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-transform-svg-with-svgo@workspace:packages/transform-svg-with-svgo":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-transform-svg-with-svgo@workspace:packages/transform-svg-with-svgo"
+  dependencies:
+    "@minolettinat/proxy-figma-export-types": ^4.5.1
+    "@types/svgo": ~2.6.4
+    svgo: ~2.8.0
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-types@^4.5.1, @minolettinat/proxy-figma-export-types@workspace:packages/types":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-types@workspace:packages/types"
+  dependencies:
+    "@minolettinat/proxy-figma-js": ~1.16.1
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-utils@^4.5.1, @minolettinat/proxy-figma-export-utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-utils@workspace:packages/utils"
+  languageName: unknown
+  linkType: soft
+
+"@minolettinat/proxy-figma-export-website@workspace:packages/website":
+  version: 0.0.0-use.local
+  resolution: "@minolettinat/proxy-figma-export-website@workspace:packages/website"
+  dependencies:
+    "@minolettinat/proxy-figma-export-cli": ^4.5.1
+    "@minolettinat/proxy-figma-export-utils": ^4.5.1
+    "@types/react": ^18.0.20
+    eslint-config-next: ^12.3.0
+    next: ^12.3.0
+    npm-run-all: ~4.1.5
+    prismjs: ^1.29.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    rimraf: ~3.0.2
+    sass: ~1.54.9
+  languageName: unknown
+  linkType: soft
+
 "@minolettinat/proxy-figma-js@npm:~1.16.0, @minolettinat/proxy-figma-js@npm:~1.16.1":
   version: 1.16.1
   resolution: "@minolettinat/proxy-figma-js@npm:1.16.1"
@@ -2096,9 +2096,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 18.13.0
-  resolution: "@types/node@npm:18.13.0"
-  checksum: 4ea10f8802848b01672bce938f678b6774ca2cee0c9774f12275ab064ae07818419c3e2e41d6257ce7ba846d1ea26c63214aa1dfa4166fa3746291752b8c6416
+  version: 18.14.0
+  resolution: "@types/node@npm:18.14.0"
+  checksum: d83fcf5e4ed544755dd9028f5cbb6b9d46235043159111bb2ad62223729aee581c0144a9f6df8ba73d74011db9ed4ebd7af2fd5e0996714e3beb508a5da8ac5c
   languageName: node
   linkType: hard
 
@@ -3157,9 +3157,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001406, caniuse-lite@npm:^1.0.30001449":
-  version: 1.0.30001452
-  resolution: "caniuse-lite@npm:1.0.30001452"
-  checksum: de02aad7b71112409f30de53e8080bef0fe612ed95bba8b14fb830f59683e8caabc27bdd520563686965be77f2cb56e239e44b920144630b91d7fe9911ba8ad5
+  version: 1.0.30001456
+  resolution: "caniuse-lite@npm:1.0.30001456"
+  checksum: c2cc479962149abd09a25b64699ee7484d9c433db2bad0a489f7b51b09a463c991f6efd7b8e201bc1a1ccf3294263f88503a3adf0a57db9046939ee7e58b76a6
   languageName: node
   linkType: hard
 
@@ -4250,9 +4250,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.284":
-  version: 1.4.296
-  resolution: "electron-to-chromium@npm:1.4.296"
-  checksum: ab156f23a5f8ef452f5a5764e42d98c89d3a225ab4660c165235a4f62ab86c114d2ab8af872f14a52b48b7a41e8db9d11b497260ac9199724c8f848b4b433e46
+  version: 1.4.302
+  resolution: "electron-to-chromium@npm:1.4.302"
+  checksum: aa764494f9a5b6916ba9f311c0204b2c73449addba18cc55d43e84e8c4465732af9cd6560a8efeb32f3c5a928299030e41352e5b3a081e9e56b086d5be618f45
   languageName: node
   linkType: hard
 
@@ -4792,11 +4792,11 @@ __metadata:
   linkType: hard
 
 "esquery@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "esquery@npm:1.4.0"
+  version: 1.4.2
+  resolution: "esquery@npm:1.4.2"
   dependencies:
     estraverse: ^5.1.0
-  checksum: a0807e17abd7fbe5fbd4fab673038d6d8a50675cdae6b04fbaa520c34581be0c5fa24582990e8acd8854f671dd291c78bb2efb9e0ed5b62f33bac4f9cf820210
+  checksum: 2f4ad89c5aafaca61cc2c15e256190f0d6deb4791cae6552d3cb4b1eb8867958cdf27a56aaa3272ff17435e3eaa19ee0d4129fac336ca6373d7354d7b5da7966
   languageName: node
   linkType: hard
 
@@ -4942,41 +4942,6 @@ __metadata:
   checksum: 4090bd66193693dcda605e44d6b8715d8fb5c92a67acd57826e55cf816a342f550d57e5638f822b39366e1b2fdb244e99b3068a37213aa1d6c1bf602b8fde5ae
   languageName: node
   linkType: hard
-
-"figma-export@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "figma-export@workspace:."
-  dependencies:
-    "@types/chai": ~4.3.3
-    "@types/chai-as-promised": ^7.1.5
-    "@types/chai-things": 0.0.35
-    "@types/mocha": ~9.1.1
-    "@types/node": ~16.11.59
-    "@types/sinon": ~10.0.13
-    "@types/sinon-chai": ~3.2.8
-    "@typescript-eslint/eslint-plugin": ~5.37.0
-    "@typescript-eslint/parser": ~5.37.0
-    chai: ~4.3.6
-    chai-as-promised: ^7.1.1
-    chai-things: ~0.2.0
-    eslint: ~8.23.1
-    eslint-config-airbnb: ~19.0.4
-    eslint-plugin-chai-friendly: ~0.7.2
-    eslint-plugin-import: ~2.26.0
-    husky: ^7.0.4
-    lerna: ^4.0.0
-    lerna-changelog: ~2.2.0
-    lint-staged: ~12.5.0
-    mocha: ~9.2.2
-    nock: ~13.2.9
-    npm-check-updates: ^12.5.12
-    nyc: ~15.1.0
-    sinon: ~13.0.2
-    sinon-chai: ~3.7.0
-    ts-node: ~10.9.1
-    typescript: ~4.8.3
-  languageName: unknown
-  linkType: soft
 
 "figures@npm:^3.0.0":
   version: 3.2.0
@@ -7167,9 +7132,9 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^7.4.4, lru-cache@npm:^7.5.1, lru-cache@npm:^7.7.1":
-  version: 7.14.1
-  resolution: "lru-cache@npm:7.14.1"
-  checksum: d72c6713c6a6d86836a7a6523b3f1ac6764768cca47ec99341c3e76db06aacd4764620e5e2cda719a36848785a52a70e531822dc2b33fb071fa709683746c104
+  version: 7.16.1
+  resolution: "lru-cache@npm:7.16.1"
+  checksum: 64618e3ed4fd1203afedd9bbf5247921b1419f8e3100f20e58e5f04e741f8287bd7d04fefaad332411bb53b3a73445714b235de750cf5d310cba1fa23bd82795
   languageName: node
   linkType: hard
 
@@ -9143,6 +9108,41 @@ __metadata:
   checksum: 4a9bef6aa0449a0245ded319ac3cbfd032c3e76ebb562777037a3a832c99253d0e8bc2847f7be350236df620a11f7d4fe683ea7f59a2cc14c69f746b6259eda4
   languageName: node
   linkType: hard
+
+"proxy-figma-export@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "proxy-figma-export@workspace:."
+  dependencies:
+    "@types/chai": ~4.3.3
+    "@types/chai-as-promised": ^7.1.5
+    "@types/chai-things": 0.0.35
+    "@types/mocha": ~9.1.1
+    "@types/node": ~16.11.59
+    "@types/sinon": ~10.0.13
+    "@types/sinon-chai": ~3.2.8
+    "@typescript-eslint/eslint-plugin": ~5.37.0
+    "@typescript-eslint/parser": ~5.37.0
+    chai: ~4.3.6
+    chai-as-promised: ^7.1.1
+    chai-things: ~0.2.0
+    eslint: ~8.23.1
+    eslint-config-airbnb: ~19.0.4
+    eslint-plugin-chai-friendly: ~0.7.2
+    eslint-plugin-import: ~2.26.0
+    husky: ^7.0.4
+    lerna: ^4.0.0
+    lerna-changelog: ~2.2.0
+    lint-staged: ~12.5.0
+    mocha: ~9.2.2
+    nock: ~13.2.9
+    npm-check-updates: ^12.5.12
+    nyc: ~15.1.0
+    sinon: ~13.0.2
+    sinon-chai: ~3.7.0
+    ts-node: ~10.9.1
+    typescript: ~4.8.3
+  languageName: unknown
+  linkType: soft
 
 "psl@npm:^1.1.28":
   version: 1.9.0
@@ -11540,8 +11540,8 @@ __metadata:
   linkType: hard
 
 "yargs@npm:^17.1.0":
-  version: 17.6.2
-  resolution: "yargs@npm:17.6.2"
+  version: 17.7.0
+  resolution: "yargs@npm:17.7.0"
   dependencies:
     cliui: ^8.0.1
     escalade: ^3.1.1
@@ -11550,7 +11550,7 @@ __metadata:
     string-width: ^4.2.3
     y18n: ^5.0.5
     yargs-parser: ^21.1.1
-  checksum: 47da1b0d854fa16d45a3ded57b716b013b2179022352a5f7467409da5a04a1eef5b3b3d97a2dfc13e8bbe5f2ffc0afe3bc6a4a72f8254e60f5a4bd7947138643
+  checksum: e7d5f5b60e63b04ded7c27c3d4b194565565cac3ea19fffcdbb183bed973a83106822a04dda28ebba4811ce92949a9d9858d3935186ff8f343548bf98aab2120
   languageName: node
   linkType: hard
 

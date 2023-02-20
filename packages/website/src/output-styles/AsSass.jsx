@@ -35,11 +35,11 @@ const props = {
                 ['styles', {
                     fileId: 'fzYhvQpqwhZDUImRz431Qo',
                     outputters: [
-                        // https://www.npmjs.com/package/@figma-export/output-styles-as-sass
-                        require('@figma-export/output-styles-as-sass')({
+                        // https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-styles-as-sass
+                        require('@minolettinat/proxy-figma-export-output-styles-as-sass')({
                             output: './output/scss',
                         }),
-                        require('@figma-export/output-styles-as-sass')({
+                        require('@minolettinat/proxy-figma-export-output-styles-as-sass')({
                             output: './output/sass',
                             getExtension: () => 'SASS',
                         })

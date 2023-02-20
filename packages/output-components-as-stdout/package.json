@@ -1,7 +1,7 @@
 {
-    "name": "@figma-export/output-components-as-stdout",
-    "version": "4.5.0",
-    "description": "Outputter for @figma-export that outputs components in console as json",
+    "name": "@minolettinat/proxy-figma-export-output-components-as-stdout",
+    "version": "4.5.1",
+    "description": "Outputter for @minolettinat/figma-export that outputs components in console as json",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": {
@@ -23,7 +23,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "^4.5.0"
+        "@minolettinat/proxy-figma-export-types": "^4.5.1"
     },
     "engines": {
         "node": "^12.22.0 || ^14.17.0 || >=16.0.0"

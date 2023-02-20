@@ -1,14 +1,14 @@
 
-# @figma-export/cli
+# @minolettinat/proxy-figma-export-cli
 
-> Command line for @figma-export.
+> Command line for @minolettinat/figma-export.
 
 ## Install
 
 While you can install it globally on your machine, it's much better to install it **locally** project by project.
 
 ```sh
-npm install --save-dev @figma-export/cli
+npm install --save-dev @minolettinat/proxy-figma-export-cli
 ```
 
 > **Note:** If you do not have a `package.json`, create one before installing or run `npm init -y` to automatically create ones.
@@ -84,7 +84,7 @@ or install an official transformer:
 
 | Package | Version |
 |---------|---------|
-| [`@figma-export/transform-svg-with-svgo`](/packages/transform-svg-with-svgo) | [![npm](https://img.shields.io/npm/v/@figma-export/transform-svg-with-svgo.svg?maxAge=3600)](https://www.npmjs.com/package/@figma-export/transform-svg-with-svgo) |
+| [`@minolettinat/proxy-figma-export-transform-svg-with-svgo`](/packages/transform-svg-with-svgo) | [![npm](https://img.shields.io/npm/v/@minolettinat/proxy-figma-export-transform-svg-with-svgo.svg?maxAge=3600)](https://www.npmjs.com/package/@minolettinat/proxy-figma-export-transform-svg-with-svgo) |
 
 
 #### outputters
@@ -112,11 +112,11 @@ or install an official outputter:
 
 | Package | Version |
 |---------|---------|
-| [`@figma-export/output-components-as-es6`](/packages/output-components-as-es6) | [![npm](https://img.shields.io/npm/v/@figma-export/output-components-as-es6.svg?maxAge=3600)](https://www.npmjs.com/package/@figma-export/output-components-as-es6) |
-| [`@figma-export/output-components-as-stdout`](/packages/output-components-as-stdout) | [![npm](https://img.shields.io/npm/v/@figma-export/output-components-as-stdout.svg?maxAge=3600)](https://www.npmjs.com/package/@figma-export/output-components-as-stdout) |
-| [`@figma-export/output-components-as-svg`](/packages/output-components-as-svg) | [![npm](https://img.shields.io/npm/v/@figma-export/output-components-as-svg.svg?maxAge=3600)](https://www.npmjs.com/package/@figma-export/output-components-as-svg) |
-| [`@figma-export/output-components-as-svgr`](/packages/output-components-as-svgr) | [![npm](https://img.shields.io/npm/v/@figma-export/output-components-as-svgr.svg?maxAge=3600)](https://www.npmjs.com/package/@figma-export/output-components-as-svgr) |
-| [`@figma-export/output-components-as-svgstore`](/packages/output-components-as-svgstore) | [![npm](https://img.shields.io/npm/v/@figma-export/output-components-as-svgstore.svg?maxAge=3600)](https://www.npmjs.com/package/@figma-export/output-components-as-svgstore) |
+| [`@minolettinat/proxy-figma-export-output-components-as-es6`](/packages/output-components-as-es6) | [![npm](https://img.shields.io/npm/v/@minolettinat/proxy-figma-export-output-components-as-es6.svg?maxAge=3600)](https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-components-as-es6) |
+| [`@minolettinat/proxy-figma-export-output-components-as-stdout`](/packages/output-components-as-stdout) | [![npm](https://img.shields.io/npm/v/@minolettinat/proxy-figma-export-output-components-as-stdout.svg?maxAge=3600)](https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-components-as-stdout) |
+| [`@minolettinat/proxy-figma-export-output-components-as-svg`](/packages/output-components-as-svg) | [![npm](https://img.shields.io/npm/v/@minolettinat/proxy-figma-export-output-components-as-svg.svg?maxAge=3600)](https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-components-as-svg) |
+| [`@minolettinat/proxy-figma-export-output-components-as-svgr`](/packages/output-components-as-svgr) | [![npm](https://img.shields.io/npm/v/@minolettinat/proxy-figma-export-output-components-as-svgr.svg?maxAge=3600)](https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-components-as-svgr) |
+| [`@minolettinat/proxy-figma-export-output-components-as-svgstore`](/packages/output-components-as-svgstore) | [![npm](https://img.shields.io/npm/v/@minolettinat/proxy-figma-export-output-components-as-svgstore.svg?maxAge=3600)](https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-components-as-svgstore) |
 
 
 ### `styles`
@@ -156,6 +156,6 @@ or install an official outputter:
 
 | Package | Version |
 |---------|---------|
-| [`@figma-export/output-styles-as-css`](/packages/output-styles-as-css) | [![npm](https://img.shields.io/npm/v/@figma-export/output-styles-as-css.svg?maxAge=3600)](https://www.npmjs.com/package/@figma-export/output-styles-as-css) |
-| [`@figma-export/output-styles-as-sass`](/packages/output-styles-as-sass) | [![npm](https://img.shields.io/npm/v/@figma-export/output-styles-as-sass.svg?maxAge=3600)](https://www.npmjs.com/package/@figma-export/output-styles-as-sass) |
-| [`@figma-export/output-styles-as-less`](/packages/output-styles-as-less) | [![npm](https://img.shields.io/npm/v/@figma-export/output-styles-as-less.svg?maxAge=3600)](https://www.npmjs.com/package/@figma-export/output-styles-as-less) |
+| [`@minolettinat/proxy-figma-export-output-styles-as-css`](/packages/output-styles-as-css) | [![npm](https://img.shields.io/npm/v/@minolettinat/proxy-figma-export-output-styles-as-css.svg?maxAge=3600)](https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-styles-as-css) |
+| [`@minolettinat/proxy-figma-export-output-styles-as-sass`](/packages/output-styles-as-sass) | [![npm](https://img.shields.io/npm/v/@minolettinat/proxy-figma-export-output-styles-as-sass.svg?maxAge=3600)](https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-styles-as-sass) |
+| [`@minolettinat/proxy-figma-export-output-styles-as-less`](/packages/output-styles-as-less) | [![npm](https://img.shields.io/npm/v/@minolettinat/proxy-figma-export-output-styles-as-less.svg?maxAge=3600)](https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-styles-as-less) |

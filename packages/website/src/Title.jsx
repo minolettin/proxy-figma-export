@@ -3,7 +3,7 @@ import SvgOcticons from './SvgOcticons';
 const Title = () => (
     <div className="container hero figma-gradient with-opacity-05">
         <section>
-            <h1 className="figma-gradient text title">@figma-export</h1>
+            <h1 className="figma-gradient text title">@minolettinat/figma-export</h1>
             <p>Export tool for Figma</p>
             <p>
                 You can easily and automatically export your

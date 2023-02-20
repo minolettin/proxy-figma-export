@@ -1,7 +1,7 @@
 {
-    "name": "@figma-export/types",
-    "version": "4.5.0",
-    "description": "Type definition for @figma-export",
+    "name": "@minolettinat/proxy-figma-export-types",
+    "version": "4.5.1",
+    "description": "Type definition for @minolettinat/figma-export",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": {

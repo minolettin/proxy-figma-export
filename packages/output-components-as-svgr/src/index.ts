@@ -1,5 +1,5 @@
-import * as FigmaExport from '@figma-export/types';
-import { pascalCase } from '@figma-export/utils';
+import * as FigmaExport from '@minolettinat/proxy-figma-export-types';
+import { pascalCase } from '@minolettinat/proxy-figma-export-utils';
 import { transform, Config, State } from '@svgr/core';
 
 import fs = require('fs');

@@ -1,5 +1,5 @@
 import * as Figma from '@minolettinat/proxy-figma-js';
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@minolettinat/proxy-figma-export-types';
 
 const translateTextTransform = (figmaTextCase?: string): FigmaExport.TextTransform => {
     const map: { [key: string]: FigmaExport.TextTransform } = {

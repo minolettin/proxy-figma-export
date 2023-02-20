@@ -1,5 +1,5 @@
-import * as FigmaExport from '@figma-export/types';
-import { kebabCase } from '@figma-export/utils';
+import * as FigmaExport from '@minolettinat/proxy-figma-export-types';
+import { kebabCase } from '@minolettinat/proxy-figma-export-utils';
 
 import { writeVariable, writeMap } from './utils';
 

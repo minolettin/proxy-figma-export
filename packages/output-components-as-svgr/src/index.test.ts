@@ -2,7 +2,7 @@ import sinon from 'sinon';
 import { expect } from 'chai';
 import * as svgr from '@svgr/core';
 import nock from 'nock';
-import { camelCase, kebabCase } from '@figma-export/utils';
+import { camelCase, kebabCase } from '@minolettinat/proxy-figma-export-utils';
 import * as figmaDocument from '../../core/src/lib/_config.test';
 import * as figma from '../../core/src/lib/figma';
 import fs = require('fs');

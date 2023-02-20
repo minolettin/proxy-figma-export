@@ -1,7 +1,7 @@
 {
-    "name": "@figma-export/output-components-as-svgstore",
-    "version": "4.5.0",
-    "description": "Outputter for @figma-export that exports components in svg file ( SVG Sprites )",
+    "name": "@minolettinat/proxy-figma-export-output-components-as-svgstore",
+    "version": "4.5.1",
+    "description": "Outputter for @minolettinat/figma-export that exports components in svg file ( SVG Sprites )",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": {
@@ -25,7 +25,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "^4.5.0",
+        "@minolettinat/proxy-figma-export-types": "^4.5.1",
         "svgstore": "~3.0.1"
     },
     "engines": {

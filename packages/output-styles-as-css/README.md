@@ -1,6 +1,6 @@
-# @figma-export/output-styles-as-css
+# @minolettinat/proxy-figma-export-output-styles-as-css
 
-> Styles Outputter for [@figma-export](https://github.com/marcomontalbano/figma-export) that exports styles to CSS.
+> Styles Outputter for [@minolettinat/figma-export](https://github.com/marcomontalbano/figma-export) that exports styles to CSS.
 
 With this outputter you can export all the styles as variables inside a `.css` file.
 
@@ -23,7 +23,7 @@ module.exports = {
         ['styles', {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             outputters: [
-                require('@figma-export/output-styles-as-css')({
+                require('@minolettinat/proxy-figma-export-output-styles-as-css')({
                     output: './output'
                 })
             ]
@@ -37,11 +37,11 @@ module.exports = {
 `getFilename` and `getVariableName` are **optional**.
 
 ```js
-const { kebabCase } = require('@figma-export/utils');
+const { kebabCase } = require('@minolettinat/proxy-figma-export-utils');
 
 ...
 
-require('@figma-export/output-styles-as-css')({
+require('@minolettinat/proxy-figma-export-output-styles-as-css')({
     output: './output',
     getFilename: () => '_variables',
     getVariableName: (style) => kebabCase(style.name).toLowerCase(),
@@ -55,11 +55,11 @@ require('@figma-export/output-styles-as-css')({
 Using npm:
 
 ```sh
-npm install --save-dev @figma-export/output-styles-as-css
+npm install --save-dev @minolettinat/proxy-figma-export-output-styles-as-css
 ```
 
 or using yarn:
 
 ```sh
-yarn add @figma-export/output-styles-as-css --dev
+yarn add @minolettinat/proxy-figma-export-output-styles-as-css --dev
 ```

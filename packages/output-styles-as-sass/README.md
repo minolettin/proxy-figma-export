@@ -1,6 +1,6 @@
-# @figma-export/output-styles-as-sass
+# @minolettinat/proxy-figma-export-output-styles-as-sass
 
-> Styles Outputter for [@figma-export](https://github.com/marcomontalbano/figma-export) that exports styles to SASS and SCSS.
+> Styles Outputter for [@minolettinat/figma-export](https://github.com/marcomontalbano/figma-export) that exports styles to SASS and SCSS.
 
 With this outputter you can export all the styles as variables inside a `.sass` or `.scss` file.
 
@@ -23,7 +23,7 @@ module.exports = {
         ['styles', {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             outputters: [
-                require('@figma-export/output-styles-as-sass')({
+                require('@minolettinat/proxy-figma-export-output-styles-as-sass')({
                     output: './output'
                 })
             ]
@@ -37,11 +37,11 @@ module.exports = {
 `getExtension`, `getFilename` and `getVariableName` are **optional**.
 
 ```js
-const { kebabCase } = require('@figma-export/utils');
+const { kebabCase } = require('@minolettinat/proxy-figma-export-utils');
 
 ...
 
-require('@figma-export/output-styles-as-sass')({
+require('@minolettinat/proxy-figma-export-output-styles-as-sass')({
     output: './output',
     getExtension: () => 'SCSS',
     getFilename: () => '_variables',
@@ -56,11 +56,11 @@ require('@figma-export/output-styles-as-sass')({
 Using npm:
 
 ```sh
-npm install --save-dev @figma-export/output-styles-as-sass
+npm install --save-dev @minolettinat/proxy-figma-export-output-styles-as-sass
 ```
 
 or using yarn:
 
 ```sh
-yarn add @figma-export/output-styles-as-sass --dev
+yarn add @minolettinat/proxy-figma-export-output-styles-as-sass --dev
 ```

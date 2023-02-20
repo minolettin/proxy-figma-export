@@ -34,8 +34,8 @@ const props = {
                 ['styles', {
                     fileId: 'fzYhvQpqwhZDUImRz431Qo',
                     outputters: [
-                        // https://www.npmjs.com/package/@figma-export/output-styles-as-less
-                        require('@figma-export/output-styles-as-less')({
+                        // https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-styles-as-less
+                        require('@minolettinat/proxy-figma-export-output-styles-as-less')({
                             output: './output/less',
                         })
                     ]

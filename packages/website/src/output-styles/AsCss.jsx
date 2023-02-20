@@ -30,8 +30,8 @@ const props = {
                 ['styles', {
                     fileId: 'fzYhvQpqwhZDUImRz431Qo',
                     outputters: [
-                        // https://www.npmjs.com/package/@figma-export/output-styles-as-css
-                        require('@figma-export/output-styles-as-css')({
+                        // https://www.npmjs.com/package/@minolettinat/proxy-figma-export-output-styles-as-css
+                        require('@minolettinat/proxy-figma-export-output-styles-as-css')({
                             output: './output/css',
                         })
                     ]

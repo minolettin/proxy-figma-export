@@ -1,15 +1,15 @@
 /**
  * If you want to try this configuration you can just run:
- *   $ npm install --save-dev typescript ts-node @types/node @figma-export/types
- *   $ npm install --save-dev @figma-export/output-styles-as-sass @figma-export/transform-svg-with-svgo @figma-export/output-components-as-svg @figma-export/output-components-as-es6
+ *   $ npm install --save-dev typescript ts-node @types/node @minolettinat/proxy-figma-export-types
+ *   $ npm install --save-dev @minolettinat/proxy-figma-export-output-styles-as-sass @minolettinat/proxy-figma-export-transform-svg-with-svgo @minolettinat/proxy-figma-export-output-components-as-svg @minolettinat/proxy-figma-export-output-components-as-es6
  */
 
-import { FigmaExportRC, StylesCommandOptions, ComponentsCommandOptions } from '@figma-export/types';
+import { FigmaExportRC, StylesCommandOptions, ComponentsCommandOptions } from '@minolettinat/proxy-figma-export-types';
 
-import outputStylesAsSass from '@figma-export/output-styles-as-sass';
-import transformSvgWithSvgo from '@figma-export/transform-svg-with-svgo';
-import outputComponentsAsSvg from '@figma-export/output-components-as-svg';
-import outputComponentsAsEs6 from '@figma-export/output-components-as-es6';
+import outputStylesAsSass from '@minolettinat/proxy-figma-export-output-styles-as-sass';
+import transformSvgWithSvgo from '@minolettinat/proxy-figma-export-transform-svg-with-svgo';
+import outputComponentsAsSvg from '@minolettinat/proxy-figma-export-output-components-as-svg';
+import outputComponentsAsEs6 from '@minolettinat/proxy-figma-export-output-components-as-es6';
 
 const styleOptions: StylesCommandOptions = {
     fileId: 'fzYhvQpqwhZDUImRz431Qo',

@@ -1,6 +1,6 @@
-# @figma-export/output-components-as-svg
+# @minolettinat/proxy-figma-export-output-components-as-svg
 
-> Outputter for [@figma-export](https://github.com/marcomontalbano/figma-export) that exports components as svg.
+> Outputter for [@minolettinat/figma-export](https://github.com/marcomontalbano/figma-export) that exports components as svg.
 
 With this outputter you can export all components as svg into the specified output folder.
 
@@ -35,7 +35,7 @@ module.exports = {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             onlyFromPages: ['icons', 'unit-test'],
             outputters: [
-                require('@figma-export/output-components-as-svg')({
+                require('@minolettinat/proxy-figma-export-output-components-as-svg')({
                     output: './output'
                 })
             ]
@@ -53,7 +53,7 @@ const path = require('path');
 
 ...
 
-require('@figma-export/output-components-as-svg')({
+require('@minolettinat/proxy-figma-export-output-components-as-svg')({
     output: './output',
     getDirname: (options) => `${options.pageName}${path.sep}${options.dirname}`,
     getBasename: (options) => `${options.basename}.svg`,
@@ -67,11 +67,11 @@ require('@figma-export/output-components-as-svg')({
 Using npm:
 
 ```sh
-npm install --save-dev @figma-export/output-components-as-svg
+npm install --save-dev @minolettinat/proxy-figma-export-output-components-as-svg
 ```
 
 or using yarn:
 
 ```sh
-yarn add @figma-export/output-components-as-svg --dev
+yarn add @minolettinat/proxy-figma-export-output-components-as-svg --dev
 ```

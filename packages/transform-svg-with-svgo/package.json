@@ -1,7 +1,7 @@
 {
-    "name": "@figma-export/transform-svg-with-svgo",
-    "version": "4.5.0",
-    "description": "Transformer for @figma-export that optimizes svgs using svgo tool",
+    "name": "@minolettinat/proxy-figma-export-transform-svg-with-svgo",
+    "version": "4.5.1",
+    "description": "Transformer for @minolettinat/figma-export that optimizes svgs using svgo tool",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": {
@@ -24,7 +24,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "^4.5.0",
+        "@minolettinat/proxy-figma-export-types": "^4.5.1",
         "@types/svgo": "~2.6.4",
         "svgo": "~2.8.0"
     },

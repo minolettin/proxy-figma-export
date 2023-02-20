@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@minolettinat/proxy-figma-export-types';
 
 export = (): FigmaExport.ComponentOutputter => {
     return async (pages): Promise<void> => {
